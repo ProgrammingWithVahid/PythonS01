@@ -1,6 +1,7 @@
 # لیست ساده از اعداد (Integer List)
-numbers = [1, 2, 3, 4, 5]
+numbers = [100, 205, 323, 443, 597]
 #index : 0 1 2 3 4
+print(numbers[2])
 print(numbers)
 
 # فراموش کردن کروشه [] در تعریف لیست
@@ -23,7 +24,7 @@ print(empty_list)
 # این برنامه اطلاعات دانشجویان رو ذخیره، فیلتر و پردازش می‌کنه.
 
 # مقداردهی اولیه لیست با مقدار خاص / پر کردن لیست با مقدار پیش‌فرض
-default_grades = [0] * 5  # فرض کن دانشجو هنوز نمره‌ نداره
+default_grades = [10] * 50  # فرض کن دانشجو هنوز نمره‌ نداره
 print("نمرات پیش‌فرض برای دانشجو جدید:", default_grades)
 
 # تعریف لیست اطلاعات دانشجویان
@@ -52,19 +53,6 @@ for fruit in fruits:
     print(fruit)
 
 for i in range(5):
-    print(i)
-
-# دستور break و continue
-#دستور break: حلقه را به طور کامل متوقف می‌کند.
-# دستور continue: تنها یک تکرار از حلقه را نادیده می‌گیرد و به تکرار بعدی می‌رود.
-for i in range(10):
-    if i == 5:
-        break
-    print(i)
-
-for i in range(5):
-    if i == 3:
-        continue
     print(i)
 
 for student in students:
@@ -126,6 +114,10 @@ print("دسترسی به نمره دوم دانشجوی دوم:", grades_matrix[
 student_3_grades = students[2]["grades"]
 print("نمرات دانشجوی سوم:", student_3_grades)
 
+
+
+
+
 #  حذف مقدار خاص از لیست بدون استفاده از حلقه for
 all_grades_without_10 = [x for x in all_grades if x != 10]
 print("لیست نمرات بدون مقدار 10:", all_grades_without_10)
@@ -140,11 +132,9 @@ high_achievers = [student for student in students if sum(student["grades"]) / le
 print("دانشجویان با میانگین نمره بالای 15:", high_achievers)
 
 #  جستجو در لیست: پیدا کردن دانشجویی با ID خاص
-def find_student(student_id):
-    result = [student for student in students if student["id"] == student_id]
-    return result[0] if result else "دانشجو یافت نشد"
+result_student = [student for student in students if student["id"] == 103]
 
-print("جستجوی دانشجو با ID 103:", find_student(103))
+print("جستجوی دانشجو با ID 103:", result_student)
 
 # تکنیک‌های پیشرفته Slicing
 print("هر دو مقدار در میان:", all_grades[::2])
