@@ -55,6 +55,11 @@ False
 name = ""
 print(not name)  # True چون رشته خالی است
 ```
+## Assignment Operators
+x = 5
+x += 3   # معادل x = x + 3
+print(x) # 8
+
 ## Membership Operators
 ```python
 lst = [1, 2, 3]
@@ -66,8 +71,27 @@ print(4 not in lst)  # True
 ```python
 a = [1, 2, 3]
 b = [1, 2, 3]
+c = a
 print(a == b)   # True (مقدارها برابرند)
 print(a is b)   # False (هویت‌ها متفاوتند)
+print(a is c)  # True  -> چون به همان مکان حافظه اشاره می‌کنند
+
+x = 256
+y = 256
+print(x is y)  # True -> چون اعداد کوچک در حافظه مشترک هستند
+
+x = 257
+y = 257
+print(x is y)  # False -> چون اعداد بزرگ‌تر از 256 در مکان‌های مختلف ذخیره می‌شوند
+
+str1 = "hello"
+str2 = "hello"
+print(str1 is str2)  # True -> رشته‌های کوتاه و بدون فاصله در حافظه مشترک هستند
+
+str3 = "hello world"
+str4 = "hello world"
+print(str3 is str4)  # احتمالاً False -> چون رشته طولانی‌تر است
+
 ```
 ## Bitwise Operators
 ### and :  اگر هر دو بیت ۱ باشند، نتیجه ۱ خواهد بود؛ در غیر این‌صورت، ۰ می‌شود.
