@@ -4,7 +4,7 @@
 ### Logical Operators(اوپراتورهای منطقی)         ```and or not```
 ### Assignment Operators(اوپراتورهای انتساب)      ```= += -= *= /= //= %= =**```
 ### Membership Operators(اوپراتورهای عضویت)     ```in   not in```
-### Identity Comparison                     ```is```
+### Identity Comparison                     ```is is not```
 ### ```is None```
 ### Bitwise Operators(اوپراتورهای بیتی)           ```& | ^ ~ << >>```
 
@@ -55,7 +55,20 @@ False
 name = ""
 print(not name)  # True چون رشته خالی است
 ```
+## Membership Operators
+```python
+lst = [1, 2, 3]
+print(2 in lst)      # True
+print(4 not in lst)  # True
+```
 
+## Identity Operators
+```python
+a = [1, 2, 3]
+b = [1, 2, 3]
+print(a == b)   # True (مقدارها برابرند)
+print(a is b)   # False (هویت‌ها متفاوتند)
+```
 ## Bitwise Operators
 ### and :  اگر هر دو بیت ۱ باشند، نتیجه ۱ خواهد بود؛ در غیر این‌صورت، ۰ می‌شود.
 ```python
