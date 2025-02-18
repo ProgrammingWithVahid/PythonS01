@@ -1,4 +1,5 @@
 # 🎯 20 Combined Operator Examples in Python  
+<center>
 ```
 اوپراتورهای محاسباتی (Arithmetic Operators)  # 
 + - * / // % **
@@ -14,7 +15,7 @@ in   not in
 & | ^ ~ << >> 
 
 ```
-
+</center>
 
 # 1. Arithmetic and Comparison Operators  
 ```python
