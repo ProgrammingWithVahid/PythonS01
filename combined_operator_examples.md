@@ -1,7 +1,7 @@
 # 🎯 20 Combined Operator Examples in Python  
 
 
-اوپراتورهای محاسباتی (Arithmetic Operators) #
+###Arithmetic Operators(اوپراتورهای محاسباتی)
 ```+ - * / // % **```
 اوپراتورهای مقایسه‌ای (Comparison Operators) 
 == != < > =< =>
