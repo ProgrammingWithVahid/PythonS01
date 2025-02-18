@@ -19,10 +19,12 @@ print(a > 0 and b > 0) # True (هر دو شرط درست هستند)
 print(a > 0 and b < 0) # False (شرط دوم غلط است)
 ```
 ### and
+```
 True  True        True
 True  False       False
 False True        False
 False False       False
+```
 # 🎯 20 Combined Operator Examples in Python  
 # 1. Arithmetic and Comparison Operators  
 ```python
