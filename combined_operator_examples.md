@@ -1,5 +1,5 @@
 # 🎯 20 Combined Operator Examples in Python  
-
+```
 اوپراتورهای محاسباتی (Arithmetic Operators)  
 + - * / // % **
 اوپراتورهای مقایسه‌ای (Comparison Operators)  
@@ -13,7 +13,7 @@ in   not in
 اوپراتورهای بیتی (Bitwise Operators)
 & | ^ ~ << >> 
 
-
+```
 
 
 # 1. Arithmetic and Comparison Operators  
