@@ -6,9 +6,23 @@
 ### Membership Operators(اوپراتورهای عضویت)     ```in   not in```
 ### Bitwise Operators(اوپراتورهای بیتی)           ```& | ^ ~ << >>```
 
-#### Logical Operators
+### Logical Operators
+```
+a = True 
+b = False 
+print(a and b) # False 
+print(not a) # False
 
-
+a = 5
+b = 10
+print(a > 0 and b > 0) # True (هر دو شرط درست هستند)
+print(a > 0 and b < 0) # False (شرط دوم غلط است)
+```
+### and
+True  True        True
+True  False       False
+False True        False
+False False       False
 # 🎯 20 Combined Operator Examples in Python  
 # 1. Arithmetic and Comparison Operators  
 ```python
