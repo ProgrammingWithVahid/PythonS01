@@ -3,18 +3,16 @@
 
 ### Arithmetic Operators(اوپراتورهای محاسباتی)
 ```+ - * / // % **```
-اوپراتورهای مقایسه‌ای (Comparison Operators) 
-== != < > =< =>
-اوپراتورهای منطقی (Logical Operators)
-and or not
-اوپراتورهای انتساب (Assignment Operators)
-= += -= *= /= //= %= =**
-اوپراتورهای عضویت (Membership Operators)
-in   not in
-اوپراتورهای بیتی (Bitwise Operators) 
-& | ^ ~ << >> 
-
-
+### Comparison Operators(اوپراتورهای مقایسه‌ای) 
+```== != < > =< =>```
+### Logical Operators(اوپراتورهای منطقی)
+```and or not```
+### Assignment Operators(اوپراتورهای انتساب)
+```= += -= *= /= //= %= =**```
+### Membership Operators(اوپراتورهای عضویت)
+```in   not in```
+### Bitwise Operators(وپراتورهای بیتی)
+```& | ^ ~ << >>```
 
 
 # 1. Arithmetic and Comparison Operators  
