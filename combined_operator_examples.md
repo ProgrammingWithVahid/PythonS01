@@ -4,9 +4,12 @@
 ### Logical Operators(اوپراتورهای منطقی)         ```and or not```
 ### Assignment Operators(اوپراتورهای انتساب)      ```= += -= *= /= //= %= =**```
 ### Membership Operators(اوپراتورهای عضویت)     ```in   not in```
+### Identity Comparison                     ```is```
+### ```is None```
 ### Bitwise Operators(اوپراتورهای بیتی)           ```& | ^ ~ << >>```
 
-### Logical Operators
+
+## Logical Operators
 ```
 a = True 
 b = False 
@@ -25,6 +28,7 @@ True  False       False
 False True        False
 False False       False
 ```
+نکته: در and اگر شرط اول غلط باشد، شرط دوم اصلاً بررسی نمی‌شود (چون نتیجه به‌هرحال False است). این ویژگی به‌نام Short-Circuit Evaluation شناخته می‌شود.
 ### or
 ```
 True  True        True
@@ -37,6 +41,22 @@ False False       False
 True    False
 False   True
 ```
+نکته: not اولویت بیشتری نسبت به and و or دارد. پس در عبارات پیچیده، ابتدا شرط درون not ارزیابی می‌شود.
+
+در پایتون، مقادیر زیر به‌عنوان False درنظر گرفته می‌شوند:
+```
+
+None
+False
+0 (هر نوع عددی: int, float, complex)
+"" (رشته خالی)
+[], (), {} (لیست، تاپل، یا دیکشنری خالی)
+
+name = ""
+print(not name)  # True چون رشته خالی است
+```
+
+
 # 🎯 20 Combined Operator Examples in Python  
 # 1. Arithmetic and Comparison Operators  
 ```python
