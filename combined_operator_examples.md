@@ -1,21 +1,21 @@
 # 🎯 20 Combined Operator Examples in Python  
-<center>
+
 ```
-اوپراتورهای محاسباتی (Arithmetic Operators)  # 
+اوپراتورهای محاسباتی# (Arithmetic Operators)  
 + - * / // % **
-اوپراتورهای مقایسه‌ای (Comparison Operators)  # 
+اوپراتورهای مقایسه‌ای (Comparison Operators) 
 == != < > =< =>
-اوپراتورهای منطقی (Logical Operators) #
+اوپراتورهای منطقی (Logical Operators)
 and or not
-اوپراتورهای انتساب (Assignment Operators) #
+اوپراتورهای انتساب (Assignment Operators)
 = += -= *= /= //= %= =**
 اوپراتورهای عضویت (Membership Operators)
 in   not in
-اوپراتورهای بیتی (Bitwise Operators) #
+اوپراتورهای بیتی (Bitwise Operators) 
 & | ^ ~ << >> 
 
 ```
-</center>
+
 
 # 1. Arithmetic and Comparison Operators  
 ```python
