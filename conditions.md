@@ -84,7 +84,7 @@ if x > 5 and y > 10:
     print("هر دو شرط برقرار است.")
 ```
 
-## Points
+## Tipps
 
 ### in
 ```python
