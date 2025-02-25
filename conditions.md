@@ -106,7 +106,7 @@ if not names:
 #### Or
 ```python
 name = input("your name: ") or "undefined!"
-print(f"سلام، {name}!")
+print(f"Hi، {name}!")
 ```
 #### And
 ```python
