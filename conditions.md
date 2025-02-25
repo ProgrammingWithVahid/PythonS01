@@ -34,7 +34,18 @@ age = 20
 message = "Ok!" if age >= 18 else "Not Ok!"
 print(message)
 ```
+```python
+num = 7
+parity = "Even" if num % 2 == 0 else "Odd"
 
+print(parity)  # خروجی: "Odd"
+```
+```python
+a, b = 5, 10
+bigger = a if a > b else b
+
+print(bigger)  # خروجی: 10
+```
 ## 3. if - elif - else (اگر - در غیر این صورت اگر - در غیر این صورت)
 ```python
 score = 85
