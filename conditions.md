@@ -64,6 +64,7 @@ match day:
 ### Comparison Operators(اوپراتورهای مقایسه‌ای) == != < > =< =>
 ### Logical Operators(اوپراتورهای منطقی) and or not
 ### link to Operators in youtube: https://youtu.be/6GphqYhGWKg?si=jzc1pY60DiKW3lkP
+### github link: https://github.com/ProgrammingWithVahid/PythonS01/blob/main/combined_operator_examples.md
 ```python
 x = 7
 y = 15
