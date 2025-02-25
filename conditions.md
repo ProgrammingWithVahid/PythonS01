@@ -15,7 +15,7 @@ if age >= 18:
 else:
     print("شما هنوز مجاز به رانندگی نیستید.")
 ```
-### ۱. شرط‌های تو در تو (Nested Conditions)
+###  شرط‌های تو در تو (Nested Conditions)
 ```python
 age = 20
 has_license = True
