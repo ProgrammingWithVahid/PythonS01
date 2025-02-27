@@ -17,9 +17,9 @@ text = "Python"
 for char in text:
     print(char)
 ```
-`range(start, stop, step)`
-`range(5)` -> `0 1 2 3 4`
-`range(1, 10, 2)` -> `1 3 5 7 9`
+#### `range(start, stop, step)`
+#### `range(5)` -> `0 1 2 3 4`
+#### `range(1, 10, 2)` -> `1 3 5 7 9`
 ```python
 for i in range(5):  # مقدارهای 0 تا 4
     print(i)
