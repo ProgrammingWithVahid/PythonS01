@@ -108,7 +108,7 @@ def before_and_after(func):
 
 before_and_after(greet)
 ```
-
+#### `First-Class Objects`
 ```python
 def square(x):
     return x ** 2
