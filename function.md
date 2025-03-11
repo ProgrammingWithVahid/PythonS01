@@ -147,10 +147,30 @@ print(triple(5))  # output: 15
 ```
 
 ```python
-```
+def make_calculator(operation):
+    def calculator(a, b):
+        if operation == "add":
+            return a + b
+        elif operation == "subtract":
+            return a - b
+        elif operation == "multiply":
+            return a * b
+        elif operation == "divide":
+            return a / b if b != 0 else "Error!"
+        else:
+            return "Invalid operation!"
+    return calculator
 
-```python
-```
+# ساخت توابع مختلف
+add_func = make_calculator("add")  # تابع جمع
+subtract_func = make_calculator("subtract")  # تابع تفریق
+multiply_func = make_calculator("multiply")  # تابع ضرب
+divide_func = make_calculator("divide")  # تابع تقسیم
 
-```python
+# استفاده از توابع تولید شده
+print(add_func(5, 3))       # خروجی: 8
+print(subtract_func(10, 4)) # خروجی: 6
+print(multiply_func(6, 7))  # خروجی: 42
+print(divide_func(20, 5))   # خروجی: 4.0
+print(divide_func(10, 0))   # خروجی: خطا: تقسیم بر صفر!
 ```
