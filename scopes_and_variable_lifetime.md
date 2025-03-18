@@ -63,3 +63,27 @@ def outer_function():
 
 outer_function()
 ```
+
+## Tipp
+### Global-like
+```python
+x = [10, 20, 30]
+
+def modify_list():
+    x.append(40) # it works without global keyword
+
+modify_list()
+print(x)  # output: [10, 20, 30, 40]
+```
+### Variable Shadowing
+```python
+x = 10  # global var
+
+def my_function():
+    x = 5  # new
+    print(x)  # output 5
+
+my_function()
+print(x)  # output 10
+
+```
