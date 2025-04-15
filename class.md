@@ -1,13 +1,17 @@
 ```python
 class Car:
-    def __init__(self, color):
+    def __init__(self, color, name):
         self.color = color
+        self.name = name
 
-    def show_color(self):
-        print(self.color)
+    def show_detail(self):
+        print("car color: ",self.color, ",car name: " ,self.name)
 
-car1 = Car("red")
-car1.show_color()  # output: red
+bmw = Car("red", "bmw")
+bmw.show_detail() 
+
+mercedes = Car("khaki", "mercedes")
+mercedes.show_detail()
 ```
 ```python
 class Person:
@@ -36,19 +40,6 @@ class Car:
 Car()
 Car()
 Car.show_total()  # output: 2
-```
-
-```python
-class Person:
-    def __init__(self, name, age):
-        self.name = name  # ویژگی name مختص این شیء
-        self.age = age
-
-    def introduce(self):
-        print(f"My name is {self.name} and I am {self.age} years old.")
-
-p1 = Person("Ali", 30)
-p1.introduce()
 ```
 
 ```python
