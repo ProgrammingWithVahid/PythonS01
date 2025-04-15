@@ -16,7 +16,7 @@ mercedes.show_detail()
 ```python
 class Person:
     def __init__(self, name, age):
-        self.name = name  # ویژگی name مختص این شیء
+        self.name = name  
         self.age = age
 
     def introduce(self):
@@ -87,6 +87,6 @@ class Test:
         self.__secret = "hidden"
 
 t = Test()
-# print(t.__secret)  ← خطا
-print(t._Test__secret)  # درست کار می‌کنه: name mangling
+# print(t.__secret)  ← false
+print(t._Test__secret)  # this is correct
 ```
