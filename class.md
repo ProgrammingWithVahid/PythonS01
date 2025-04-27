@@ -1,17 +1,23 @@
 ```python
 class Car:
-    def __init__(self, color, name):
+    def __init__(self, color, name, speed):
         self.color = color
         self.name = name
+        self.speed = speed
+
+    def double_speed(self):
+        self.speed *= 2
 
     def show_detail(self):
         print("car color: ",self.color, ",car name: " ,self.name)
 
-bmw = Car("red", "bmw")
-bmw.show_detail() 
+bmw = Car("red", "bmw", 200)
+bmw.show_detail()
+print(bmw.double_speed())
 
-mercedes = Car("khaki", "mercedes")
+mercedes = Car("khaki", "mercedes", 250)
 mercedes.show_detail()
+print(mercedes.double_speed())
 ```
 ```python
 class Person:
