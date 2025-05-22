@@ -17,6 +17,14 @@ def greet():
 
 greet()  # فراخوانی تابع
 ```
+بازنویسی با لامبدا
+⛔ لامبدا مناسب نیست چون
+lambda نمی‌تونه print() به‌تنهایی اجرا کنه چون خروجی‌ای برنمی‌گردونه
+```python
+greet = lambda: print("Hi there!")
+greet()
+```
+
 ### تابع با ورودی و خروجی (return)
 ```python
 def add(a, b):
@@ -26,7 +34,11 @@ def add(a, b):
 sum_result = add(5, 10)
 print(sum_result)
 ```
-
+نسخه با لامبدا
+```python
+add = lambda a, b: a + b
+print(add(5, 10))
+```
 ### Default Parameters
 ```python
 def greet(name="user"):
@@ -42,12 +54,23 @@ def sum_all(*numbers):
 
 print(sum_all(1, 2, 3, 4, 5))  # 15
 ```
+نسخه با لامبدا
+```python
+sum_all = lambda *numbers: sum(numbers)
+print(sum_all(1, 2, 3, 4, 5))
+```
+
 ### تعداد نامحدود ورودی کلیدی (**kwargs)
 ```python
 def user_info(**info):
     for key, value in info.items():
         print(f"{key}: {value}")
 
+user_info(name="vahid", age=25, city="tehran")
+```
+⛔ لامبدا مناسب نیست چون lambda فقط یه عبارت می‌پذیره.
+```python
+user_info = lambda **info: [print(f"{k}: {v}") for k, v in info.items()]
 user_info(name="vahid", age=25, city="tehran")
 ```
 ##  توابع بازگشتی (Recursive Functions)
@@ -68,6 +91,7 @@ factorial(3) = 3 * factorial(2)
 factorial(2) = 2 * factorial(1)
 factorial(1) = 1  (stop condition!)
 ```
+⛔ این تابع نمی‌تونه با لامبدا نوشته بشه به‌صورت مستقیم چون شامل شرط (if) و بازگشتی هست و چند خطی
 ### دنباله فیبوناچی
 #### F(n)=F(n−1)+F(n−2)
 #### F(0)=0,F(1)=1
